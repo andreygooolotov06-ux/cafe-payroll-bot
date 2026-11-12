@@ -13,8 +13,6 @@ services:
         sync: false
       - key: OWNER_USERNAMES
         sync: false
-      - key: OWNER_IDS
-        value: ""
       - key: TIMEZONE
         value: Europe/Kyiv
       - key: BOT_MODE
