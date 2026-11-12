@@ -1,0 +1,27 @@
+# Секрети та конфігурація оточення
+.env
+.env.*
+!.env.example
+
+# Локальна база даних та тимчасові файли
+data/
+*.db
+*.db-*
+*.sqlite
+*.sqlite3
+
+# Віртуальне середовище та бінарники тунелю
+.venv/
+venv/
+bin/
+
+# Python / pytest кеш
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# Системні та офісні тимчасові файли
+~$*
+.DS_Store
+Thumbs.db

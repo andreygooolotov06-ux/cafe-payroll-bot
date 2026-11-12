@@ -1,0 +1,24 @@
+services:
+  - type: web
+    name: cafe-payroll-bot
+    runtime: docker
+    plan: free
+    healthCheckPath: /health
+    autoDeploy: true
+    envVars:
+      - key: BOT_TOKEN
+        sync: false
+      - key: DATABASE_URL
+        sync: false
+      - key: OWNER_IDS
+        sync: false
+      - key: OWNER_USERNAMES
+        sync: false
+      - key: TIMEZONE
+        value: Europe/Kyiv
+      - key: BOT_MODE
+        value: webhook
+      - key: MINIAPP_HOST
+        value: 0.0.0.0
+      - key: MINIAPP_AUTO_TUNNEL
+        value: "false"

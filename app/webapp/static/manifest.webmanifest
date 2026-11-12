@@ -1,0 +1,17 @@
+{
+  "name": "Кафе Кабінет",
+  "short_name": "Кафе Кабінет",
+  "description": "Зміни, каса дня, фінансова аналітика та виплати персоналу кафе",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#FFFCF6",
+  "theme_color": "#C89522",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
