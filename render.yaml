@@ -3,6 +3,7 @@ services:
     name: cafe-payroll-bot
     runtime: docker
     plan: free
+    region: frankfurt
     healthCheckPath: /health
     autoDeploy: true
     envVars:
@@ -10,10 +11,10 @@ services:
         sync: false
       - key: DATABASE_URL
         sync: false
-      - key: OWNER_IDS
-        sync: false
       - key: OWNER_USERNAMES
         sync: false
+      - key: OWNER_IDS
+        value: ""
       - key: TIMEZONE
         value: Europe/Kyiv
       - key: BOT_MODE
